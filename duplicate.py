@@ -14,14 +14,11 @@ duplicate(123);
 def duplicate(elemento):
    tipo=str(type(elemento))   
    if 'int' in tipo:
-      return int(str(elemento)+str(elemento))
-   elif 'list'in tipo:      
-      lista=elemento
-      for i in range(len(elemento)):
-         lista.append(elemento[i])
-      return lista      
+      return int(str(elemento)*2)
+   elif 'list'in tipo:         
+      return elemento*2      
    elif 'str' in tipo:
-      return elemento+elemento
+      return elemento*2
    else:
       return "Argumento no permitido"
      
